@@ -1,0 +1,2 @@
+<view>hello</view>
+<button class="agree" bindtap="agree" disabled="{{disabled}}">{{agree}}</button>

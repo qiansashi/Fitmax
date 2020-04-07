@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "用户登录",
+  "usingComponents": {
+    "i-action-sheet": "../../dist/action-sheet/index"
+  },
+  "disableScroll": true
+}

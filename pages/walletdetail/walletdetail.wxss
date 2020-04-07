@@ -1,0 +1,10 @@
+/* pages/walletdetail/walletdetail.wxss */
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+#money_detail{
+  height: 600rpx;
+  width: 800rpx;
+}

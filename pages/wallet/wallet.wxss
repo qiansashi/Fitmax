@@ -1,0 +1,32 @@
+/* pages/wallet/wallet.wxss */
+.wallet_num{
+  text-align: center;
+  font-size: 260%;
+
+}
+
+.input_money{
+  text-align: center;
+  margin-top: 200rpx;
+
+}
+
+.wallet_fun{
+  text-align: center;
+  margin-top: 100rpx;
+
+}
+
+.wallet_refill{
+  color: white;
+  background-color: #ff6500;
+  width: 300rpx;
+  border-radius: 50rpx;
+}
+
+.wallet_detail{
+  margin-top: 50rpx;
+  border: none;
+  font-size: 75%;
+  background-color: transparent;
+}

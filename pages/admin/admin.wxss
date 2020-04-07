@@ -1,0 +1,19 @@
+/* pages/admin/admin.wxss */
+
+.admin {
+  height: 420rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.admin_img {
+  height: 150rpx;
+  width: 150rpx;
+  background-color: #cfc8cc;
+  border-radius: 80rpx;
+  margin-top: 120rpx;
+}
+
+.admin_list {
+  margin-top: 75rpx;
+}

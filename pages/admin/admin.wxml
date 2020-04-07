@@ -1,0 +1,51 @@
+<!--pages/admin/admin.wxml-->
+<view class='wrapper'>
+  <view class='admin'>
+    <view class="admin_img"></view>
+  </view>
+  <view class='admin_step'>
+    <i-steps current='{{step_current}}'>
+      <i-step icon='group'>
+        <view slot='content'>用户登录</view>
+      </i-step>
+      <i-step icon='coupons'>
+        <view slot='content'>首次充值</view>
+      </i-step>
+      <i-step icon='prompt'>
+        <view slot='content'>信誉验证</view>
+      </i-step>
+      <i-step icon='homepage'>
+        <view slot='content'>开始体验</view>
+      </i-step>
+    </i-steps>
+  </view>
+  <view class='admin_list'>
+    <i-cell-group>
+      <view class='wallet_form'>
+        <i-cell i-class="wallet" title="钱包充值" is-link url="/pages/wallet/wallet">
+          <i-icon slot='icon' type="financial_fill" />
+        </i-cell>
+      </view>
+      <view class='credit_form'>
+        <i-cell i-class="credit" title="个人信誉" is-link url="/pages/credit/credit">
+          <i-icon slot='icon' type="transaction_fill" />
+        </i-cell>
+      </view>
+      <view class='fix_form'>
+        <i-cell i-class="fix" title="故障报修" is-link url="/pages/fix/fix">
+          <i-icon slot='icon' type="warning_fill" />
+        </i-cell>
+      </view>
+      <view class='service_form'>
+        <i-cell i-class="service" title="客服投诉" is-link url="/pages/service/service">
+          <i-icon slot='icon' type="service_fill" />
+        </i-cell>
+      </view>
+      <view class='logout_form'>
+        <i-cell i-class="logout" title="退出登录" is-link url="/pages/logs/logs">
+          <i-icon slot='icon' type="undo" />
+        </i-cell>
+      </view>
+    </i-cell-group>
+  </view>
+</view>

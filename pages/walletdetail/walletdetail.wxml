@@ -1,0 +1,4 @@
+<!--pages/walletdetail/walletdetail.wxml-->
+<view class="wrapper">
+  <ec-canvas id="money_detail" canvas-id="mychart-bar" ec="{{ec}}"></ec-canvas>
+</view>

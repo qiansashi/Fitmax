@@ -1,0 +1,11 @@
+<!--pages/wallet/wallet.wxml-->
+<view class="container">
+  <view class="wallet_num">
+    <text class="current_money">￥{{currentmoney}}</text>
+  </view>
+  <input class="input_money" type="digit" placeholder="请输入充值金额" maxlength="9" value="{{money_value}}" bindinput="inputMoney"/>
+  <view class="wallet_fun">
+    <button class="wallet_refill" size="small" plain="{{plain}}" bindtap="rechargeMoney">充值</button>
+    <button class="wallet_detail"size="small" bindtap="searchDetail">明细</button>
+  </view>
+</view>

@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class='search_index'>
+  <view class='intro_background' style="display:{{intro_display}}">
+    <view class="intro_img" ></view>
+    <view class="know_more" bindtap="knowMore" style="display:{{knowmore_display}}">更多详情</view>
+    <button class="intro_agree" bindtap="introKnown" style="display:{{introKnown_display}}">我已了解</button>
+  </view>
+  <view class='top_bar'>
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" 
+      open-type="getUserInfo" 
+      bindgetuserinfo="getUserInfo" />
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </block>
+    </view>
+    <view class='nearby_bar'>
+      <button class='nearby_all' plain='{{all_plain}}' bindtap="allshow" style="color:{{all_color}}">附近租借地</button>
+      <button class='nearby_rent' plain='{{rent_plain}}' bindtap="rentshow" style="color:{{rent_color}}">附近归还点</button>
+    </view>
+    <button class="app_instruction" bindtap="app_ins" plain="true">指南</button>
+  </view>
+  <view class="search_tab">
+    <input class="search_input" type="text"  placeholder="请输入目标区域" placeholder-class="search_placeholder" bindconfirm='search_BTN' value="{{position_value}}"/>
+    <button class='search' type='default'plain='{{search_plain}}'size='mini' bindtap="choose_position">搜索</button>
+  </view> 
+  <view class="nav_box">
+   
+  </view>
+  <map
+  class='search_map'
+  id="searchmap"
+  longitude='{{map_longitude}}'
+  latitude='{{map_latitude}}'
+  scale='16'
+  markers='{{map_markers}}'
+  polyline='{{map_polyline}}'
+  bindregionchange='bindregionchange'
+  show-compass= 'true'
+  bindtap="locatePoint"
+  show-location="true"
+  enable-3D="true"
+  enable-rotate= '{{enable_rotate}}'
+  enable-overlooking='{{enable_overlooking}}'
+  enable-scroll='{{enable_scroll}}'
+  enable-zoom='{{enable_zoom}}'
+  >
+  </map>
+  <button class="scan_qr" bindtap="scan_QRcode" >点击扫描</button>
+  <button class="locate_current" bindtap="locateCurrent">定</button>
+  <button class="current_points" bindtap="getCurrentPoint" style="display:{{currentPoint}}">点击加载目标周围租借地</button>
+</view>

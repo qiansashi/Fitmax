@@ -1,0 +1,75 @@
+/* pages/fix/fix.wxss */
+.wrapper{
+  display: block;
+  font-size: 85%;
+}
+
+.device{
+  margin-top: 75rpx;
+
+}
+.device_input{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50rpx;
+  margin-top: 35rpx;
+}
+
+.important{
+  color: red;
+}
+
+.broken_device{
+  padding-left: 30rpx;
+  background-color: #eee;
+  width: 650rpx;
+
+}
+
+.device_group{
+  display: flex;
+  flex-direction: column;
+  margin-top: 80rpx;
+}
+
+.device_photo{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.photo_text{
+  margin-top: 25rpx;
+
+}
+
+.label_1{
+  margin-bottom: 18rpx;
+  margin-left: 65rpx;
+}
+
+.photo{
+  display: flex;
+  margin-top: 50rpx;
+
+}
+
+.remarks{
+  margin-top: 45rpx;
+  background-color: #eee;
+  width: 95%;
+  margin-left: 15rpx;
+}
+
+.total_words{
+  margin-left: 600rpx;
+}
+
+.submit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  margin-left: 5rpx;
+  margin-top: 15rpx;
+  background-color: #eee;
+}

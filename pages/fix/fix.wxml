@@ -1,0 +1,25 @@
+<!--pages/fix/fix.wxml-->
+<view class="wrapper">
+  <view class="device">
+    <text>发现故障设备</text>
+    <view class="device_input">
+      <text class="important">*</text>
+      <input class="broken_device" placeholder="请输入故障区域" value="{{device_value}}" focus="true" bindinput="broken_device"></input>
+    </view>
+  </view>
+  <checkbox-group class="device_group" bindchange="change">
+    <label class="label_1" wx:for="{{checkboxItems}}" wx:key="id">
+      <checkbox  value="{{item.name}}" checked="{{item.checked}}" color='#ff6500'>{{item.problem}}</checkbox>
+    </label>
+  </checkbox-group>
+  <view class="photo">
+    <button class="device_photo" bindtap="add_photo">拍</button>
+    <view class="photo_contraction">
+    <!--加载图片缩略图-->
+    </view>
+    <text class="photo_text">拍摄具体故障照片，帮助我们解决问题</text>
+  </view>
+  <textarea class="remarks" adjust-position placeholder="备注" auto-height="true" maxlength="120" value="{{remarks_value}}" bindinput="remarks_input"></textarea>
+  <text class="total_words" style="{{color}}">{{totalwords}}</text>
+  <button class="submit_fix" bindtap="submit">提交</button>
+</view>

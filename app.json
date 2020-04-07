@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/map/map",
+    "pages/admin/admin",
+    "pages/provision/provision",
+    "pages/wallet/wallet",
+    "pages/credit/credit",
+    "pages/fix/fix",
+    "pages/service/service",
+    "pages/index/instruction",
+    "pages/walletdetail/walletdetail",
+    "pages/ec-canvas/ec-canvas",
+    "pages/rent/rent"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff6500",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "小程序即将使用您的位置"
+    }
+  }
+}

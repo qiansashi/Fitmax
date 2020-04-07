@@ -1,0 +1,8 @@
+/* pages/provision/provision.wxss */
+.agree{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 75%;
+  color: #ff6500;
+}
